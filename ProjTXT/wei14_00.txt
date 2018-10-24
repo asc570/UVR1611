@@ -348,12 +348,12 @@ AUSGANGSVARIABLE:
 ;ANFORDERUNG:
 ;;Ausgang:;keiner
 ANFORDERUNGSTEMP.:
-;DIFF.EIN:;2.0 K
+;DIFF.EIN:;3.0 K
 ;DIFF.AUS:;8.0 K
 Sockeltemperatur:
 ;T.anf.MIN:;0 °C
 Mindestlaufzeit
-;Brenner:;4.5 Min
+;Brenner:;4.0 Min
 ÖKOBETRIEB:
 ;Unterdeckung:;0 %
 ------------------------------
@@ -372,11 +372,11 @@ EINGANGSVARIABLE:
 ;SOLLWERT ABSOLUTWERTREG.:
 ;;Quelle:;Benutzer
 ;TEMP.(+) DIFFERENZREG.:
-;;Quelle:;Benutzer
-;;;unbenutzt
+;;Quelle:;Eingang
+;;12:;Kollektor VL1
 ;TEMP.(-) DIFFERENZREG.:
-;;Quelle:;Benutzer
-;;;unbenutzt
+;;Quelle:;FBH_VL1
+;;1:;VL.Solltemp
 ;AKTIVIERUNGSTEMP. EREIGNISREG.:
 ;;Quelle:;Benutzer
 ;;;unbenutzt
@@ -391,11 +391,11 @@ AUSGANGSVARIABLE:
 ;STELLGROESSE:
 ;;Drehz.Ausg.:;15
 ABSOLUTWERTREG.:
-;MODUS:;invers
-;T.abs.SOLL:;1 °C
-DIFFERENZREGELUNG:
 ;MODUS:;aus
-;DIFF.SOLL:;8.0 K
+;T.abs.SOLL:;22 °C
+DIFFERENZREGELUNG:
+;MODUS:;invers
+;DIFF.SOLL:;1.0 K
 EREIGNISREGELUNG:
 ;MODUS:;aus
 ;BEDING.:;IST > SCHW
@@ -458,10 +458,10 @@ VORLAUFTEMPERATUR:
 ;;;Heizkurve:;Temp.
 ;;Raumeinfluss:;0%
 ;;Einschaltüberh.:;5%
-;;T.vorl.+10°C:;30 °C
-;;T.vorl.-20°C:;50 °C
-;;T.vorl.MAX:;55 °C
-;;T.vorl.MIN:;28 °C
+;;T.vorl.+10°C:;40 °C
+;;T.vorl.-20°C:;55 °C
+;;T.vorl.MAX:;60 °C
+;;T.vorl.MIN:;35 °C
 AUSSENTEMPERATUR:
 ;MITTELWERT:
 ;;für Vorlaufregelung:
@@ -496,7 +496,7 @@ EINGANGSVARIABLE:
 ;;Status:;EIN
 ;ANFORDERUNGSTEMP.:
 ;;Quelle:;Eingang
-;;13:;T.Heizkr.RL3
+;;5:;T.Heizkr.VL3
 ;ABSCHALTTEMPERATUR:
 ;;Quelle:;Benutzer
 ;;;unbenutzt
@@ -515,7 +515,7 @@ ANFORDERUNGSTEMP.:
 Sockeltemperatur:
 ;T.anf.MIN:;0 °C
 Mindestlaufzeit
-;Brenner:;6.0 Min
+;Brenner:;4.0 Min
 ÖKOBETRIEB:
 ;Unterdeckung:;0 %
 ------------------------------
@@ -530,7 +530,7 @@ EINGANGSVARIABLE:
 ;;Modus:;normal
 ;TEMP. ABSOLUTWERTREG.:
 ;;Quelle:;Eingang
-;;13:;T.Heizkr.RL3
+;;5:;T.Heizkr.VL3
 ;SOLLWERT ABSOLUTWERTREG.:
 ;;Quelle:;RAD_RL3
 ;;1:;VL.Solltemp
@@ -672,7 +672,7 @@ AUSGANGSVARIABLE:
 ;ANFORDERUNG:
 ;;Ausgang:;keiner
 ANFORDERUNGSTEMP.:
-;DIFF.EIN:;2.0 K
+;DIFF.EIN:;3.0 K
 ;DIFF.AUS:;8.0 K
 Sockeltemperatur:
 ;T.anf.MIN:;0 °C
@@ -696,11 +696,11 @@ EINGANGSVARIABLE:
 ;SOLLWERT ABSOLUTWERTREG.:
 ;;Quelle:;Benutzer
 ;TEMP.(+) DIFFERENZREG.:
-;;Quelle:;Benutzer
-;;;unbenutzt
+;;Quelle:;Eingang
+;;15:;Kollektor VL4
 ;TEMP.(-) DIFFERENZREG.:
-;;Quelle:;Benutzer
-;;;unbenutzt
+;;Quelle:;FBH_VL4
+;;1:;VL.Solltemp
 ;AKTIVIERUNGSTEMP. EREIGNISREG.:
 ;;Quelle:;Benutzer
 ;;;unbenutzt
@@ -715,11 +715,11 @@ AUSGANGSVARIABLE:
 ;STELLGROESSE:
 ;;Drehz.Ausg.:;15
 ABSOLUTWERTREG.:
-;MODUS:;invers
-;T.abs.SOLL:;1 °C
-DIFFERENZREGELUNG:
 ;MODUS:;aus
-;DIFF.SOLL:;8.0 K
+;T.abs.SOLL:;22 °C
+DIFFERENZREGELUNG:
+;MODUS:;invers
+;DIFF.SOLL:;1.0 K
 EREIGNISREGELUNG:
 ;MODUS:;aus
 ;BEDING.:;IST > SCHW
@@ -1662,5 +1662,3 @@ DATENSATZ 2:
 FUNKTIONSÜBERSICHT:
 ------------------------------
 Q;SCHORNSTF1
-Q;FBH_VL1
-Q;FBH_VL4
