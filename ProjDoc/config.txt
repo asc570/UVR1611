@@ -1,0 +1,23 @@
+Hardware:
+	- BL-Net
+		ver.2.19
+		CAN-BUS ID	=> 62
+		IP		=> 10.1.15.202
+	- UVR1611
+		ver.A3.28DE
+		Can-BUS ID	=> 1
+	- BC-KNX
+		ver.A1.10DE
+		Can-BUS ID	=> 48
+
+
+
+
+
+Software:
+Password	=> 0128
+
+	- TAPPS 
+		ver.:A3.24 (32bit)
+	- Memory Manager
+
